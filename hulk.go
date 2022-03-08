@@ -25,8 +25,8 @@ import (
 
 const __version__  = "1.0.1"
 
-// const acceptCharset = "windows-1251,utf-8;q=0.7,*;q=0.7" // use it for runet
-const acceptCharset = "ISO-8859-1,utf-8;q=0.7,*;q=0.7"
+const acceptCharset = "windows-1251,utf-8;q=0.7,*;q=0.7" // use it for runet
+// const acceptCharset = "ISO-8859-1,utf-8;q=0.7,*;q=0.7"
 
 const (
 	callGotOk              uint8 = iota
@@ -39,11 +39,11 @@ const (
 var (
 	safe            bool     = false
 	headersReferers []string = []string{
-		"http://www.google.com/?q=",
-		"http://www.usatoday.com/search/results?q=",
-		"http://engadget.search.aol.com/search?q=",
-		//"http://www.google.ru/?hl=ru&q=",
-		//"http://yandex.ru/yandsearch?text=",
+		//"http://www.google.com/?q=",
+		//"http://www.usatoday.com/search/results?q=",
+		//"http://engadget.search.aol.com/search?q=",
+		"http://www.google.ru/?hl=ru&q=",
+		"http://yandex.ru/yandsearch?text=",
 	}
 	headersUseragents []string = []string{
 		"Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.1.3) Gecko/20090913 Firefox/3.5.3",
